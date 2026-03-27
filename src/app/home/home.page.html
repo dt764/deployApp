@@ -1,18 +1,15 @@
-<ion-content class="ion-padding">
-
-  <h1>Gestión de Incidencias</h1>
-
-  <p>
-    Esta aplicación permite reportar incidencias capturando una imagen
-    junto con la geolocalización del dispositivo.
-  </p>
-
-  <ion-button expand="block" routerLink="/nueva-incidencia">
-    Nueva incidencia
-  </ion-button>
-
-  <ion-button expand="block" color="secondary" routerLink="/listado-incidencias">
-    Ver incidencias
-  </ion-button>
-
+<ion-content class="mi-pagina-scroll">
+  <div class="page-center">
+    <ion-card class="ion-padding card-main">
+      <h1>Gestión de Incidencias</h1>
+      <p>
+        Esta aplicación permite reportar incidencias capturando una imagen
+        junto con la geolocalización del dispositivo.
+      </p>
+     <div class="button-group">
+        <ion-button expand="block" class="btn-primary" routerLink="/nueva-incidencia">Nueva incidencia</ion-button>
+        <ion-button expand="block" color="secondary" class="btn-secondary" routerLink="/listado-incidencias">Ver incidencias</ion-button>
+     </div>
+    </ion-card>
+  </div>
 </ion-content>
