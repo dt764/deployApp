@@ -101,7 +101,21 @@
     --ion-color-dark-tint: #444444;
 
     --ion-background-color: #f0f0f0;
+    --ion-text-color: #000000;
 
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+    /* Fondo y texto */
+    --ion-background-color: #121212;
+    --ion-text-color: #ffffff;
+
+    --ion-color-light: #2e2d2d;
+    --ion-color-medium: #aaaaaa;
+    --ion-color-dark: #f4f5f8;
+  }
 }
 
 

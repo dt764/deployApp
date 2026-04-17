@@ -26,6 +26,11 @@ export class NuevaIncidenciaPage {
   // 📷 Tomar foto + geolocalización
   async takePicture() {
     try {
+
+      // 🔐 Pedir permisos
+      await Camera.requestPermissions();
+      await Geolocation.requestPermissions();
+
       const image = await Camera.getPhoto({
         quality: 80,
         resultType: CameraResultType.Uri
@@ -40,8 +45,8 @@ export class NuevaIncidenciaPage {
       this.longitude = position.coords.longitude;
 
     } catch (error) {
-        console.error('Error:', error);
-        this.showToast('Error al tomar la foto o obtener ubicación', 'danger');
+      console.error('Error:', error);
+      this.showToast('Error al tomar la foto o obtener ubicación', 'danger');
     }
   }
 
