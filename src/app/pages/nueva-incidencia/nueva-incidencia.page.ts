@@ -5,6 +5,8 @@ import { Geolocation } from '@capacitor/geolocation';
 import { IncidenciasService } from '../../services/incidencias.service';
 import { ToastController } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
+import { addIcons } from 'ionicons';
+import { arrowBack } from 'ionicons/icons';
 
 @Component({
   selector: 'app-nueva-incidencia',
@@ -22,6 +24,10 @@ export class NuevaIncidenciaPage {
   latitude?: number;
   longitude?: number;
   router = inject(Router);
+
+  constructor() {
+    addIcons({ arrowBack });
+  }
 
   // 📷 Tomar foto + geolocalización
   async takePicture() {

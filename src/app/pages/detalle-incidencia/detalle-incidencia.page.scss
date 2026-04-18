@@ -9,20 +9,11 @@ ion-buttons[slot="start"] {
   min-width: 48px; /* evita que el título lo aplaste */
 }
 
-ion-header {
+ion-header ion-title{
   font-weight: 700;          /* negrita */
   font-size: clamp(1.5rem, 2.5vw, 2rem); /* más grande y escalable */
   text-align: center; 
-  position: relative;       /* opcional, centrado */
 }
-
-ion-title {
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-
-
 
 ion-back-button {
   --color: white;

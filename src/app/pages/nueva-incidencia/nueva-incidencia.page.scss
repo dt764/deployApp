@@ -15,15 +15,6 @@ ion-header ion-title {
   text-align: center;        /* opcional, centrado */
 }
 
-ion-toolbar {
-  position: relative;
-}
-
-ion-title {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 ion-back-button {
   --color: white;
