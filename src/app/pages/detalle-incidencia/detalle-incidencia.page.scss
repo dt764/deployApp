@@ -9,11 +9,17 @@ ion-buttons[slot="start"] {
   min-width: 48px; /* evita que el título lo aplaste */
 }
 
-ion-header ion-title {
+ion-header {
   font-weight: 700;          /* negrita */
   font-size: clamp(1.5rem, 2.5vw, 2rem); /* más grande y escalable */
-  color: var(--ion-color-light); /* letra clara sobre fondo primario */
-  text-align: center;        /* opcional, centrado */
+  text-align: center; 
+  position: relative;       /* opcional, centrado */
+}
+
+ion-title {
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 
@@ -50,7 +56,6 @@ ion-content::part(scroll) {
   h1 {
     font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 700;
-    color: var(--ion-color-dark);
   }
 
   p {

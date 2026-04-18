@@ -12,11 +12,18 @@ ion-buttons[slot="start"] {
 ion-header ion-title {
   font-weight: 700;          /* negrita */
   font-size: clamp(1.5rem, 2.5vw, 2rem); /* más grande y escalable */
-  color: var(--ion-color-light); /* letra clara sobre fondo primario */
   text-align: center;        /* opcional, centrado */
 }
 
+ion-toolbar {
+  position: relative;
+}
 
+ion-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 ion-back-button {
   --color: white;
@@ -47,8 +54,15 @@ p {
     font-size: clamp(1rem, 3vw, 1.2rem);
 }
 
-ion-button {
-  --background: var(--ion-color-primary);
-  --color: var(--ion-color-primary-contrast);
+ion-button{
   font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.boton-guardar {
+  --background: var(--ion-color-success);
+  color: white;
+}
+
+img {
+  border-radius: 7%;
 }

@@ -12,7 +12,6 @@ ion-buttons[slot="start"] {
 ion-header ion-title {
   font-weight: 700;          /* negrita */
   font-size: clamp(1.5rem, 2.5vw, 2rem); /* más grande y escalable */
-  color: var(--ion-color-light); /* letra clara sobre fondo primario */
   text-align: center;        /* opcional, centrado */
 }
 
@@ -36,6 +35,8 @@ ion-list.incidencias-list {
   max-width: 1000px;
   width: 100%;
   min-width: 200px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 ion-item::part(native) {
